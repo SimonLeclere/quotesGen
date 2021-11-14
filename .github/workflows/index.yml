@@ -16,7 +16,7 @@ jobs:
         id: readme
         with:
           stargazerName: ${{ github.actor }}
-          starsCount: ${{ github.ref_head_count }}
+
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"

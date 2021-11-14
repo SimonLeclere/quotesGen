@@ -1,14 +1,20 @@
 const fs = require('fs')
+const fetch = require("node-fetch");
 const core = require('@actions/core');
 
 const data = {
     stargazerName: core.getInput('stargazerName'),
-    starsCount: core.getInput('starsCount'),
 }
 
-console.log(data);
+fetch("https://api.github.com/repos/11ty/eleventy")
+    .then(res => res.json())
+    .then(json => {
+        data += { stargazers: json.stargazers_count };
 
-core.setOutput('data', JSON.stringify(data));
+        console.log(data);
+        core.setOutput('data', JSON.stringify(data));
+    });
+
 
 // try {
 //     const previousData = require('../data.json');

@@ -4,9 +4,7 @@ inputs:
   stargazerName:
     description: 'Stargazers name'
     required: true
-  starsCount:
-    description: 'Repos stars number'
-    required: true
+
 runs:
   using: 'node12'
   main: 'index.js'
