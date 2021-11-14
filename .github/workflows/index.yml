@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
-          git pull origin main
+          git pull origin master
 
       - name: Update readme
         uses: ./action
