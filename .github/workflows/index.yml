@@ -12,7 +12,7 @@ jobs:
           git pull origin master
 
       - name: Update readme
-        uses: action
+        uses: ./action
         id: readme
         with:
           stargazerName: ${{ github.actor }}
