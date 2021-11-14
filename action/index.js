@@ -2,15 +2,15 @@ const fs = require('fs')
 const fetch = require("node-fetch");
 const core = require('@actions/core');
 
-let data = {
+let githubData = {
     stargazerName: core.getInput('stargazerName'),
     repoName: core.getInput('repo'),
 }
 
-fetch(`https://api.github.com/repos/${data.repoName}`)
+fetch(`https://api.github.com/repos/${githubData.repoName}`)
     .then(res => res.json())
     .then(json => {
-        data = { ...data, stargazers: json.stargazers_count };
+        githubData = { ...githubData, stargazers: json.stargazers_count };
 
 
     const quote = 'On rigole on rigole mais on voit pas le fond du bol'
@@ -18,15 +18,15 @@ fetch(`https://api.github.com/repos/${data.repoName}`)
     fs.readFile('./action/template.md', async (err, data) => {
         if (err) throw err;
         let template = data.toString();
-        template = template.replace('{{stargazerName}}', data.stargazerName);
-        template = template.replace('{{starsCount}}', data.stargazers);
+        template = template.replace('{{stargazerName}}', githubData.stargazerName);
+        template = template.replace('{{starsCount}}', githubData.stargazers);
         template = template.replace('{{quote}}', quote);
 
         fs.writeFile('./readme.md', template, (err) => {
             if (err) throw err;
             console.log('The file has been saved!');
-            console.log(data);
-            core.setOutput('data', JSON.stringify(data));
+            console.log(githubData);
+            core.setOutput('data', JSON.stringify(githubData));
         });
 
     })
