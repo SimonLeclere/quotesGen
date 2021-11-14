@@ -7,7 +7,7 @@ let data = {
     repoName: core.getInput('repo'),
 }
 
-fetch(`https://api.github.com/repos/${repo}`)
+fetch(`https://api.github.com/repos/${data.repoName}`)
     .then(res => res.json())
     .then(json => {
         data = { ...data, stargazers: json.stargazers_count };
