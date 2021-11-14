@@ -16,6 +16,7 @@ jobs:
         id: readme
         with:
           stargazerName: ${{ github.actor }}
+          repo: ${{ github.repository }}
 
       - name: Commit files
         run: |

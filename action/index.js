@@ -4,9 +4,10 @@ const core = require('@actions/core');
 
 let data = {
     stargazerName: core.getInput('stargazerName'),
+    repoName: core.getInput('repo'),
 }
 
-fetch("https://api.github.com/repos/11ty/eleventy")
+fetch(`https://api.github.com/repos/${repo}`)
     .then(res => res.json())
     .then(json => {
         data = { ...data, stargazers: json.stargazers_count };
