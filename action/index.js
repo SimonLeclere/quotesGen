@@ -8,6 +8,7 @@ const data = {
 
 console.log(data);
 
+core.setOutput('data', JSON.stringify(data));
 
 // try {
 //     const previousData = require('../data.json');
