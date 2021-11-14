@@ -1,6 +1,7 @@
 const fs = require('fs')
 const fetch = require("node-fetch");
 const core = require('@actions/core');
+const randomQuote = require('../quoteGen');
 
 let githubData = {
     stargazerName: core.getInput('stargazerName'),
@@ -13,7 +14,7 @@ fetch(`https://api.github.com/repos/${githubData.repoName}`)
         githubData = { ...githubData, stargazers: json.stargazers_count };
 
 
-    const quote = 'On rigole on rigole mais on voit pas le fond du bol'
+    const quote = randomQuote();
 
     fs.readFile('./action/template.md', async (err, data) => {
         if (err) throw err;
