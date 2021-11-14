@@ -5,7 +5,7 @@ inputs:
     description: 'Stargazers name'
     required: true
   starsCount:
-    description: 'Repo's stars number'
+    description: 'Repos stars number'
     required: true
 runs:
   using: 'node12'
