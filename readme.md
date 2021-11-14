@@ -6,5 +6,7 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 
 ## Citation inspirante générée à chaque star
 <br>
-> *Pierre qui mousse n'avale pas roule*
+
+> Pierre qui mousse n'avale pas roule
+> 
 > Simon Leclere - 21e stargazer
