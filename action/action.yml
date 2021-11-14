@@ -2,7 +2,7 @@ name: 'update readme'
 description: 'Updates the readme with lastest stargazer'
 inputs:
   stargazerName:
-    description: 'Stargazer's name'
+    description: 'Stargazers name'
     required: true
   starsCount:
     description: 'Repo's stars number'
