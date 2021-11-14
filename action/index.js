@@ -9,7 +9,7 @@ let data = {
 fetch("https://api.github.com/repos/11ty/eleventy")
     .then(res => res.json())
     .then(json => {
-        data += { stargazers: json.stargazers_count };
+        data = { ...data, stargazers: json.stargazers_count };
 
         console.log(data);
         core.setOutput('data', JSON.stringify(data));
