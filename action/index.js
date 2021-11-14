@@ -2,7 +2,7 @@ const fs = require('fs')
 const fetch = require("node-fetch");
 const core = require('@actions/core');
 
-const data = {
+let data = {
     stargazerName: core.getInput('stargazerName'),
 }
 
