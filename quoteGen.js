@@ -9,7 +9,7 @@ const words = [
         ["n'arrache", "n'avale", "n'étale", "n'envoie", "ne vole", "n'ignore", "n'envoie"],
         ["mousse", "rousse", "bousse", "bouche", "louche"]
     ],
-    ['AAAAAAAAH! (très aigü)', 'HIIIIIIIII! (très aigü)', 'Donner c\'est donner et repeindre ses volets', 'Tu veux pas 1000 balles plutôt ?', 'Vieux motard que jamais', 'J\'ai l\'athlète dans l\'cul', 'On va remettre les pendules sur les i', 'On va remettre les points à l\'heure', 'L\'avenir appartient à ceux qui se lavent tôt', 'C\'est la porte ouverte à toutes les fenêtres'],
+    ['AAAAAAAAH! (très aigü)', 'HIIIIIIIII! (très aigü)', 'Donner c\'est donner et repeindre ses volets', 'Tu veux pas 1000 balles plutôt ?', 'Vieux motard que jamais', 'J\'ai l\'athlète dans l\'cul', 'On va remettre les pendules sur les i', 'On va remettre les points à l\'heure', 'L\'avenir appartient à ceux qui se lavent tôt', 'C\'est la porte ouverte à toutes les fenêtres', 'Vrai développeur code dans Word'],
     [
         ['au vieux singe', 'à la sorcière', 'au rigolo', 'au vieux pingouin', 'au kebabier'],
         ['faire des grimaces', 'crier', 'rigoler', 'faire des glaces', 'manger des yaourts', 'être drip']
