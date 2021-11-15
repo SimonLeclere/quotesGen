@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *Larry ne fait pas le plombier*
+> *Ca m'en roule une sans pétrifier l'autre*
 > 
-> Lucas9h - 2e stargazer
+> cstefFlexin - 3e stargazer
