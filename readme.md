@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *Ca m'en roule une sans pétrifier l'autre*
+> *Couille qui chousse n'envoie pas rousse*
 > 
-> cstefFlexin - 3e stargazer
+> EliotYou - 4e stargazer
