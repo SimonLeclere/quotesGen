@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *Couille qui chousse n'envoie pas rousse*
+> *C'est la friandise sur le rateau*
 > 
-> EliotYou - 4e stargazer
+> Steci - 5e stargazer
