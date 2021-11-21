@@ -29,6 +29,9 @@ const words = [
     [
         ['L\'habit', 'L\'argent', 'L\'histoire', 'L\'habile', 'Larry', 'Barry', 'Jerry'],
         ['curé', 'moine', 'plombier', 'cuisinier', 'postier', 'portier']
+    ],
+    [
+        ['bière', 'pierre']
     ]
 ];
 
@@ -43,6 +46,7 @@ const functions = [
     () => `C'est la ${randomFromArray(words[5][0])} sur le ${randomFromArray(words[5][1])}`,
     () => `Ca m'en ${randomFromArray(words[6][0])} une sans ${randomFromArray(words[6][1])} l'autre`,
     () => `${randomFromArray(words[7][0])} ne fait pas le ${randomFromArray(words[7][1])}`,
+    () => `Tout travail mérite sa ${randomFromArray(words[8][0])}`,
 ];
 
 const randomQuote = () => randomFromArray(functions)();
