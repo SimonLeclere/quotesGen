@@ -1,3 +1,4 @@
+name: 'Ig post'
 on:
   schedule:
     - cron: "*/6 * * * *"
