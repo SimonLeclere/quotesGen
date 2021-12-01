@@ -1,7 +1,7 @@
-const fs = require('fs')
-const fetch = require("node-fetch");
-const core = require('@actions/core');
-const randomQuote = require('../quoteGen');
+import fs from 'fs';
+import fetch from 'node-fetch';
+import core from '@actions/core';
+import randomQuote from '../quoteGen.js';
 
 let githubData = {
     stargazerName: core.getInput('stargazerName'),

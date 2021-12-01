@@ -1,0 +1,18 @@
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  ig-post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: |
+          git pull origin master
+
+      - name: Post to Instagram
+        uses: ./instagram autoposter
+        id: insta
+        with:
+          password: ${{ secrets.IG_PASSWORD }}

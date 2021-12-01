@@ -1,0 +1,10 @@
+name: 'Post to Instagram'
+description: 'Post to Instagram'
+inputs:
+  password:
+    description: 'Password'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
