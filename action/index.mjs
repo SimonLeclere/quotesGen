@@ -1,7 +1,7 @@
-const fs = require('fs');
-const fetch = require('node-fetch');
-const core = require('@actions/core');
-const randomQuote = require('../quoteGen.js');
+import fs from 'fs';
+import fetch from 'node-fetch';
+import core from '@actions/core';
+import randomQuote from '../quoteGen.js';
 
 let githubData = {
     stargazerName: core.getInput('stargazerName'),
@@ -36,7 +36,7 @@ fetch(`https://api.github.com/repos/${githubData.repoName}`)
 
 
 // try {
-//     const previousData = require('../data.json');
+//     const previousData from '../data.json');
 
 //     if(previousData.lastQuestion.toString() !== answerData[1]) {
         
