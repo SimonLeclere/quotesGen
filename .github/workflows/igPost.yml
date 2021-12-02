@@ -11,6 +11,8 @@ jobs:
 
       - run: |
           git pull origin master
+
+      - run: |
           npm update canvas
 
       - name: Post to Instagram
