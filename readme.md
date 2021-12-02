@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *L'histoire ne fait pas le plombier*
+> *C'est la porte ouverte à toutes les fenêtres*
 > 
->  - undefinede stargazer
+> SimonLeclere - 5e stargazer
