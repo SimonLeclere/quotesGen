@@ -12,6 +12,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
+      
+      - run:
+        node --version
+        sudo node --version
 
       - run: |
           git pull origin master
