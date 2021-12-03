@@ -28,11 +28,11 @@ import { readFile } from 'fs';
 import { promisify } from 'util';
 const readFileAsync = promisify(readFile);
 
-import randomQuote from '../quoteGen.js';
+const randomQuote = require('../quoteGen.js');
 const alreadyUsed = require('./alreadyUsed.json');
 
 const unsplash = createApi({
-  accessKey: 'C0BJRfWjr9eAZY6nwsIcE1eq033Ke2yuaMGzpBYWvw4',
+  accessKey: 'unsplashApiKey',
   fetch: fetch
 });
 
