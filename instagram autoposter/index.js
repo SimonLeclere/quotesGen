@@ -28,7 +28,7 @@ import { readFile } from 'fs';
 import { promisify } from 'util';
 const readFileAsync = promisify(readFile);
 
-const randomQuote = require('../quoteGen.js');
+import * as randomQuote from '../quoteGen.js';
 const alreadyUsed = require('./alreadyUsed.json');
 
 const unsplash = createApi({

@@ -2,9 +2,7 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import core from '@actions/core';
 
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const randomQuote = require('../quoteGen.js');
+import * as randomQuote from '../quoteGen.js';
 
 let githubData = {
     stargazerName: core.getInput('stargazerName'),
