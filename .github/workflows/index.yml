@@ -10,6 +10,7 @@ jobs:
 
       - run: |
           git pull origin master
+          npm install
 
       - name: Update readme
         uses: ./action
