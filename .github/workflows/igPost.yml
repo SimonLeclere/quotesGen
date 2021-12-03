@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '14'
       
-      - run:
+      - run: |
         node --version
         sudo node --version
 
