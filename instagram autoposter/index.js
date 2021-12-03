@@ -3,6 +3,8 @@ import core from '@actions/core';
 const username = 'simonsquotes'
 const password = core.getInput('password');
 
+const unsplashApiKey = core.getInput('UNSPLASH_API_KEY');
+
 
 import fs from 'fs';
 import canvas from 'canvas';
