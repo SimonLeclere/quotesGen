@@ -2,6 +2,7 @@ name: 'Ig post'
 on:
   schedule:
     - cron: "*/6 * * * *"
+  workflow_dispatch:
 
 jobs:
   ig-post:
