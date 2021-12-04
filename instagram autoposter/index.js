@@ -28,11 +28,11 @@ import { readFile } from 'fs';
 import { promisify } from 'util';
 const readFileAsync = promisify(readFile);
 
-import * as randomQuote from '../quoteGen.js';
+import * as quoteGen from '../quoteGen.js';
 const alreadyUsed = require('./alreadyUsed.json');
 
 const unsplash = createApi({
-  accessKey: 'unsplashApiKey',
+  accessKey: unsplashApiKey,
   fetch: fetch
 });
 
@@ -64,7 +64,7 @@ fetchUnsplash(rdmWord).then(r => {
 
 
 function getUniqueQuote() {
-  const quote = randomQuote(true);
+  const quote = quoteGen.randomQuote(true);
   if(alreadyUsed.includes(quote[0])) return getUniqueQuote();
   alreadyUsed.push(quote[0]);
   fs.writeFileSync(__dirname + '/alreadyUsed.json', JSON.stringify(alreadyUsed));
