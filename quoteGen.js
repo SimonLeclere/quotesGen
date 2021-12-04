@@ -117,4 +117,4 @@ const randomQuote = (raw = false) => {
 }
 
 
-module.exports.randomQuote = randomQuote;
+export { randomQuote, randomFromArray };
