@@ -53,7 +53,6 @@ fetchUnsplash(rdmWord).then(r => {
     out.on('finish', async () => {
       await login();
       const media = await post(__dirname + '/out.jpg', quote + '\n' + `📷 @${r[1]} via Unsplash`);
-      console.log(media.status !== 'ok' ? media.message : 'Posted!');
       // delete file
       fs.unlinkSync(__dirname + '/out.jpg');
     });
@@ -66,9 +65,12 @@ fetchUnsplash(rdmWord).then(r => {
 function getUniqueQuote() {
   const quote = quoteGen.randomQuote(true);
   if(alreadyUsed.includes(quote[0])) return getUniqueQuote();
+  console.log('quote:', quote[0]);
   alreadyUsed.push(quote[0]);
   fs.writeFileSync(__dirname + '/alreadyUsed.json', JSON.stringify(alreadyUsed));
-  return quote;	
+  console.log('Added to alreadyUsed.json');
+  console.log(alreadyUsed);
+  return quote;
 }
 
 
@@ -78,6 +80,7 @@ async function fetchUnsplash(query) {
     count: 1,
   }).then(r => {
     if(r.type === 'error') return console.log(r.errors);
+    console.log('Image fetched from Unsplash');
     const photo = r.response[0];
     return [photo.urls.regular, photo.user.social.instagram_username || photo.user.instagram_username || photo.user.username];
   }).catch(console.log);
@@ -119,6 +122,8 @@ function drawImage(quoteString, url) {
     
     wrapText(ctx, quoteString, ctx.canvas.width / 2, ctx.canvas.height / 2, ctx.canvas.width - 20, 100); 
     
+    console.log('Image drawn');
+
     return canvas;
   })
 }
@@ -161,6 +166,7 @@ async function login() {
   // await ig.simulate.preLoginFlow();
   await ig.account.login(username, password);
   process.nextTick(async () => await ig.simulate.postLoginFlow());
+  console.log('Logged to Instagram');
 
 }
 
@@ -168,5 +174,6 @@ async function post(path, caption) {
   const file = await readFileAsync(path);
   const media = await ig.publish.photo({ file, caption });
   if(media.status !== 'ok') throw new Error(media.message);
+  console.log('Posted to Instagram');
   return media;
 }
