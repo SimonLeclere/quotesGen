@@ -26,3 +26,9 @@ jobs:
         with:
           password: ${{ secrets.IG_PASSWORD }}
           unsplashApiKey: ${{ secrets.UNSPLASH_API_KEY }}
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
