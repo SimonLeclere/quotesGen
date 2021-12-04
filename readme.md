@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *C'est la porte ouverte à toutes les fenêtres*
+> *L'avenir appartient à ceux qui se lavent tôt*
 > 
 > SimonLeclere - 5e stargazer
