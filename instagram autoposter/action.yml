@@ -4,6 +4,9 @@ inputs:
   password:
     description: 'Password'
     required: true
+  unsplashApiKey:
+    description: 'Unsplash API Key'
+    required: true
 
 runs:
   using: 'node12'

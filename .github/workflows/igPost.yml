@@ -25,3 +25,4 @@ jobs:
         id: insta
         with:
           password: ${{ secrets.IG_PASSWORD }}
+          unsplashApiKey: ${{ secrets.UNSPLASH_API_KEY }}
