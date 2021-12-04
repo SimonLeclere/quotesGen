@@ -117,4 +117,4 @@ const randomQuote = (raw = false) => {
 }
 
 
-export { randomQuote };
+export { randomQuote, randomFromArray };

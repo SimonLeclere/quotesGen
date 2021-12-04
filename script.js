@@ -1,9 +1,11 @@
+import * as quoteGen from './quoteGen.js';
+
 $(document).ready(function() {
   $(".title").lettering();
   $(".button").lettering();
 
   const repertories = ['corndog', 'hamster', 'sushi', 'donut', 'pancake'];
-  const repo = randomFromArray(repertories);
+  const repo = quoteGen.randomFromArray(repertories);
   $('#snow').css({'background-image': [1, 2, 3].map((x) => `url(./assets/${repo}/${x}.png)`).join(', ') });
 
 });
@@ -17,7 +19,7 @@ $('.button').click(function() {
   reverseAnimation();
   
   setTimeout(() => {
-    const quote = randomQuote();
+    const quote = quoteGen.randomQuote();
     document.getElementsByTagName('h1')[0].innerHTML = `<span class="title">${quote}</span>`;
     $(".title").lettering();
 
