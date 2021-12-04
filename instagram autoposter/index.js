@@ -67,7 +67,7 @@ function getUniqueQuote() {
   if(alreadyUsed.includes(quote[0])) return getUniqueQuote();
   console.log('quote:', quote[0]);
   alreadyUsed.push(quote[0]);
-  fs.writeFileSync(__dirname + '/alreadyUsed.json', JSON.stringify(alreadyUsed)).catch(console.log);
+  fs.writeFileSync(__dirname + '/alreadyUsed.json', JSON.stringify(alreadyUsed));
   console.log('Added to ' + __dirname + '/alreadyUsed.json');
   console.log(alreadyUsed);
   return quote;
