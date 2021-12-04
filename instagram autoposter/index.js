@@ -158,7 +158,7 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
 async function login() {
   ig.state.generateDevice(username);
   // ig.state.proxyUrl = '51.79.52.80';
-  await ig.simulate.preLoginFlow();
+  // await ig.simulate.preLoginFlow();
   await ig.account.login(username, password);
   process.nextTick(async () => await ig.simulate.postLoginFlow());
 
