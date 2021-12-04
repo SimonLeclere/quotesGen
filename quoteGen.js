@@ -117,4 +117,4 @@ const randomQuote = (raw = false) => {
 }
 
 
-export { randomQuote };
+module.exports.randomQuote = randomQuote;
