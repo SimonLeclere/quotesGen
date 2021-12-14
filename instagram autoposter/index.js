@@ -5,6 +5,9 @@ const password = core.getInput('password');
 
 const unsplashApiKey = core.getInput('unsplashApiKey');
 
+console.log(unsplashApiKey);
+console.log(password);
+
 
 import fs from 'fs';
 import canvas from 'canvas';
