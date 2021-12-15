@@ -64,7 +64,7 @@ fetchUnsplash(rdmWord).then(r => {
   
 }).catch(e => {throw new Error(e)});
 
-
+// get unique quote 
 function getUniqueQuote() {
   const quote = quoteGen.randomQuote(true);
   if(alreadyUsed.includes(quote[0])) return getUniqueQuote();
