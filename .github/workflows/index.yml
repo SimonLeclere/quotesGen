@@ -1,4 +1,3 @@
-name: 'Star'
 on:
   watch:
     types: [started]
