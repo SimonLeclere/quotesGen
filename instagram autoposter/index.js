@@ -174,7 +174,7 @@ async function login() {
 
 async function post(path, caption) {
   const file = await readFileAsync(path);
-  const media = await ig.publish.photo({ file, caption });
+  const media = await ig.publish.photo({ file, caption }).catch(() => console.log('Erreur lors de la publication'));
   if(media.status !== 'ok') {
     console.log('Erreur lors de la publication');
     throw new Error(media.message);
