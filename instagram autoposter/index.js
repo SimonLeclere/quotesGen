@@ -41,7 +41,6 @@ const unsplash = createApi({
 
 const ig = new IgApiClient();
 
-
 const [quote, words] = getUniqueQuote();
 const rdmWord = words[Math.floor(Math.random() * words.length)];
 
@@ -167,18 +166,15 @@ async function login() {
   // ig.state.proxyUrl = '51.79.52.80';
   // await ig.simulate.preLoginFlow();
   await ig.account.login(username, password);
-  process.nextTick(async () => await ig.simulate.postLoginFlow());
+  // process.nextTick(async () => await ig.simulate.postLoginFlow());
   console.log('Logged to Instagram');
 
 }
 
 async function post(path, caption) {
   const file = await readFileAsync(path);
-  const media = await ig.publish.photo({ file, caption }).catch(() => console.log('Erreur lors de la publication'));
-  if(media.status !== 'ok') {
-    console.log('Erreur lors de la publication');
-    throw new Error(media.message);
-  }
+  const media = await ig.publish.photo({ file, caption });
+  if(media.status !== 'ok') throw new Error(media.message);
   console.log('Posted to Instagram');
   return media;
 }
