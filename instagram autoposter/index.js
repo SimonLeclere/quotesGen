@@ -55,10 +55,7 @@ fetchUnsplash(rdmWord).then(r => {
     stream.pipe(out);
     out.on('finish', async () => {
       await login();
-      const media = await post(__dirname + '/out.jpg', quote + '\n' + `📷 @${r[1]} via Unsplash`).then(() => console.log('good')).catch(() => console.log('fail'))
-      
-      console.log(media);
-      
+      await post(__dirname + '/out.jpg', quote + '\n' + `📷 @${r[1]} via Unsplash`);
       // delete file
       fs.unlinkSync(__dirname + '/out.jpg');
     });
