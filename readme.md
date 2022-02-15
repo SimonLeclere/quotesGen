@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *Couille qui vole n'avale pas bouche*
+> *On va remettre les pendules sur les i*
 > 
-> JsonLinesCode - 6e stargazer
+> SimonLeclere - 7e stargazer
