@@ -1,0 +1,32 @@
+{
+  "name": "quotesgen",
+  "version": "1.0.0",
+  "description": "Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arrive de plus en plus de mélanger les mots de certaines expressions jusqu'à en transformer même le sens. C'est de là qu'est née l'idée de créer un générateur d'expressions de moi même, afin de faire encore plus gonfler mes chevilles. Au début c'était un simple programme en ligne de commande, mais avec un peu d'huile de coude et beaucoup d'huile de chômage, j'ai ajouté petit à petit une interface web, des animations pour le texte, un fond aléatoire et évidemment des canons à confettis !",
+  "main": "quoteGen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonLeclere/quotesGen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SimonLeclere/quotesGen/issues"
+  },
+  "homepage": "https://github.com/SimonLeclere/quotesGen#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "canvas": "^2.9.0",
+    "fs": "^0.0.1-security",
+    "instagram-private-api": "^1.45.2",
+    "module": "^1.2.5",
+    "node-fetch": "^3.2.0",
+    "path": "^0.12.7",
+    "unsplash-js": "^7.0.15",
+    "url": "^0.11.0",
+    "util": "^0.12.4"
+  }
+}
