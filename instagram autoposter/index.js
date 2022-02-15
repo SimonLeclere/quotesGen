@@ -81,7 +81,7 @@ async function fetchUnsplash(query) {
     query: query,
     count: 1,
   }).then(r => {
-    if(r.type === 'error') return console.log(r.errors);
+    if(r.type === 'error') return fetchUnsplash(undefined);
     console.log('Image fetched from Unsplash');
     const photo = r.response[0];
     return [photo.urls.regular, photo.user.social.instagram_username || photo.user.instagram_username || photo.user.username];
