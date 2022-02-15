@@ -175,7 +175,10 @@ async function login() {
 async function post(path, caption) {
   const file = await readFileAsync(path);
   const media = await ig.publish.photo({ file, caption });
-  if(media.status !== 'ok') throw new Error(media.message);
+  if(media.status !== 'ok') {
+    console.log('Erreur lors de la publication');
+    throw new Error(media.message);
+  }
   console.log('Posted to Instagram');
   return media;
 }
