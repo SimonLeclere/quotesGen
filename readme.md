@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *Vrai baiseur sait couisiner*
+> *Ca m'en couche une sans toucher l'autre*
 > 
-> Gimenz - 8e stargazer
+> yaya1910 - 8e stargazer
