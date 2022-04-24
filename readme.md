@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *Ca m'en couche une sans toucher l'autre*
+> *L'histoire ne fait pas le plombier*
 > 
-> yaya1910 - 8e stargazer
+> shy-tan - 9e stargazer
