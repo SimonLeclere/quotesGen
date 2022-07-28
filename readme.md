@@ -7,6 +7,6 @@ Mon cerveau d'étudiant étant surmené par... les études (l'alcool), il m'arri
 ## Citation inspirante générée à chaque star
 <br>
 
-> *L'histoire ne fait pas le plombier*
+> *Vieux motard que jamais*
 > 
-> shy-tan - 9e stargazer
+> stikky002 - 10e stargazer
